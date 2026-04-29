@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+	<meta name="Yasmin Aguilar">
+	<title>Form Activity Solution File</title>
+<!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+		<form method="post" action=" https://wp.zybooks.com/form-viewer.php">
+			<label for="name">Full Name</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" required>
+			
+			<label for="phone">Phone</label>
+			<input type="text" id="phone" name="phone" required>
+			
+			<fieldset>
+				<legend>Preferred Contact</legend>
+				<label for="phone">Phone</label>
+				<input type="radio" id="phone" name="phone" checked required>
+				
+				<label for="email">Email</label>
+				<input type="radio" id="email" name="email">
+			</fieldset>
+			
+			<label for="states">State</label>
+			<select name="state" id="state" required>
+				<option value="">Select your state:</option>
+				<option value="AL">ALABAMA</option>
+				<option value="AK">ALASKA</option>
+				<option value="AZ">ARIZONA</option>
+				<option value="AR">ARKANSAS</option>
+				<option value="CA">CALIFORNIA</option>
+				<option value="CO">COLORADO</option>
+				<option value="CT">CONNECTICUT</option>
+				<option value="DE">DELAWARE</option>
+				<option value="FL">FLORIDA</option>
+				<option value="GA">GEORGIA</option>
+				<option value="HI">HAWAII</option>
+				<option value="ID">IDAHO</option>
+				<option value="IL">ILLINOIS</option>
+				<option value="IN">INDIANA</option>
+				<option value="IA">IOWA</option>
+				<option value="KS">KANAS</option>
+				<option value="KY">KENTUCKY</option>
+				<option value="LA">LOUISIANA</option>
+				<option value="ME">MAINE</option>
+				<option value="MD">MARYLAND</option>
+				<option value="MA">MASSACHUSETTS</option>
+				<option value="MI">MICHIGAN</option>
+				<option value="MN">MINNESOTA</option>
+				<option value="MS">MISSISSIPPI</option>
+				<option value="MO">MISSOURI</option>
+				<option value="MT">MONTANA</option>
+				<option value="NE">NEBRASKA</option>
+				<option value="NV">NEVADA</option>
+				<option value="NH">NEW HAMPSHIRE</option>
+				<option value="NJ">NEW JERSEY</option>
+				<option value="NM">NEW MEXICO</option>
+				<option value="NY">NEW YORK</option>
+				<option value="NC">NORTH CAROLINA</option>
+				<option value="ND">NORTH DAKOTA</option>
+				<option value="OH">OHIO</option>
+				<option value="OK">OKLAHOMA</option>
+				<option value="OR">OREGON</option>
+				<option value="PA">PENNSYLVANIA</option>
+				<option value="RI">RHODE ISLAND</option>
+				<option value="SC">SOUTH CAROLINA</option>
+				<option value="SD">SOUTH DAKOTA</option>
+				<option value="TN">TENNESSEE</option>
+				<option value="TX">TEXAS</option>
+				<option value="UT">UTAH</option>
+				<option value="VT">VERMONT</option>
+				<option value="VA">VIRGINIA</option>
+				<option value="WA">WASHINGTON</option>
+				<option value="WV">WEST VIRGINIA</option>
+				<option value="WI">WISCONSIN</option>
+				<option value="WY">WYOMING</option>
+			</select>
+
+			<label for="comments">Comments</label>
+			<textarea id="comments"></textarea>
+			
+			<input type="submit"></input>
+		</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
